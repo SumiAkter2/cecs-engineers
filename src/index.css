@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: local('CustomFont'), url('./assets/F37-Lineca/F37Lineca/Variable/F37Lineca-VF.ttf') format('ttf'),
+     /* url('./fonts/CustomFont.woff') format('woff'); */
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
