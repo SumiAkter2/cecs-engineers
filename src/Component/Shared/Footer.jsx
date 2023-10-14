@@ -1,6 +1,14 @@
+import footerImage from "../../assets/image/Footer/footerImg.png";
 const Footer = () => {
   return (
     <div>
+      <div
+        className="h-24"
+        style={{
+          background: `url('${footerImage}')`,
+          backgroundRepeat: "no-repeat",
+        }}
+      ></div>
       <footer className="footer p-16 bg-red-500 text-white justify-between ">
         <aside>
           <h1 className="text-6xl font-bold">Let&apos;s Build.</h1>
