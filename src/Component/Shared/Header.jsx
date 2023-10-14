@@ -15,7 +15,7 @@ const Header = () => {
     </>
   );
   return (
-    <div className="max-w-screen navbar  font-bold p-4">
+    <div className="max-w-screen navbar font-bold p-4 border-b-2 border-red-500">
       <div className="navbar-start">
         <a href="/ " className=" flex justify-center items-center">
           <img src={logo} alt="logo" className="" />
