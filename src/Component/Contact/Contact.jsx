@@ -1,15 +1,18 @@
 const Contact = () => {
   return (
     <div>
-      <div className=" py-12 border-b border-red-500">
-        <h1 className="uppercase text-3xl text-red-500 px-6"> Contact Us</h1>
+      <div className=" py-12 border-b border-red-500 ">
+        <h1 className="uppercase text-3xl text-red-500 px-6 font-extrabold leading-10">
+          {" "}
+          Contact Us
+        </h1>
       </div>
 
-      <div className="my-20">
-        <h1 dir="rtl" className=" text-3xl lg:ml-56">
-          We appreciate your interest. Whether you&apos;re initiating a project,
-          seeking assistance, or simply have a general inquiry, we&apos;re happy
-          to assist.
+      <div className="my-24">
+        <h1 className=" text-3xl lg:ml-52 font-bold pr-10 text-end leading-10">
+          We appreciate your interest. Whether you&apos;re initiating a
+          project,seeking assistance, or simply have a general inquiry,
+          we&apos;re happy to assist.
           <br />
           <span className="text-red-500">
             Drop us a line and we will get back to you.
@@ -17,23 +20,23 @@ const Contact = () => {
         </h1>
       </div>
 
-      <div className="lg:flex justify-between items-start">
-        <div className="lg:w-2/5 p-4">
-          <h1 className="font-bold text-xl py-2">PROJECT ENQUIRIES</h1>
-          <p>+912246048985</p>
-          <p>info@cecsengineer.com</p>
-          <h1 className="font-bold text-xl py-4">ADDRESS</h1>
-          <p className="w-1/2 normal-case">
+      <div className="lg:flex justify-between items-start leading-7">
+        <div className="lg:w-2/5 p-4 ">
+          <h1 className="font-extrabold text-xl pb-6  ">PROJECT ENQUIRIES</h1>
+          <p className="font-semibold text-2xl">+912246048985</p>
+          <p className="font-semibold text-2xl my-2">info@cecsengineer.com</p>
+          <h1 className="font-extrabold text-xl mt-12">ADDRESS</h1>
+          <p className="w-4/5 font-semibold text-2xl my-6">
             Crystal Plaza, Hiranandani Complex, Office no. 9, First Floor, Plot
             no 18/27, Sector 7, Kharghar, Navi Mumbai, Maharashtra 410210, India
           </p>
 
-          <button className="btn btn-outline outline-2 outline-red-500 text-red-500 my-6 underline px-12">
+          <button className="btn btn-outline outline-2 outline-red-500 text-red-500 mt-12 underline  lg:w-80 ">
             View On Maps
           </button>
         </div>
         <div className="lg:w-3/5 mb-14">
-          <form className="font-[CustomFont]">
+          <form className="">
             <div className="flex gap-6 ">
               <input
                 type="text"
@@ -74,7 +77,7 @@ const Contact = () => {
               apply.
             </p>
             <input
-              className="border mt-4 border-red-500 outline-0  w-full max-w-3xl font-bold text-[22px] text-red-500  py-4 rounded-lg cursor:pointer"
+              className="border mt-4 border-red-500 outline-0  w-full max-w-3xl font-bold text-[22px] text-red-500  py-4 rounded-lg cursor-pointer"
               type="Submit"
               value="Send"
             />

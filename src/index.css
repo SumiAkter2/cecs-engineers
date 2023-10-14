@@ -4,6 +4,9 @@
      /* url('./fonts/CustomFont.woff') format('woff'); */
 }
 
+html {
+    scroll-behavior: smooth;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
