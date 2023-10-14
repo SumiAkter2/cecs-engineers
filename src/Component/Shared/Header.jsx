@@ -29,11 +29,11 @@ const Header = () => {
         {/* mobile nav */}
         <div className="dropdown dropdown-end ">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
-            <MdMenu color="#1ba9ca" size="25px" />
+            <MdMenu color="red" size="25px" />
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm  dropdown-content mt-3 z-[1] p-2   rounded-box w-52 text-white bg-black gap-y-4"
+            className="menu menu-sm  dropdown-content mt-3 z-[1] p-2   rounded-box w-52 text-red-500 gap-y-4 bg-gray-200"
           >
             {navItem}
           </ul>
