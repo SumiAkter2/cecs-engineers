@@ -37,7 +37,7 @@ const Contact = () => {
           </button>
         </div>
         <div className="lg:w-3/5 mb-14">
-          <form className="">
+          <form className="p-4">
             <div className="flex gap-6 ">
               <input
                 type="text"
