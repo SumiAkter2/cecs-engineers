@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'CustomFont';
-    src: local('CustomFont'), url('./assets/F37-Lineca/F37Lineca/Variable/F37Lineca-VF.ttf') format('ttf'),
+    font-family: 'F37Lineca';
+    src: local('F37Lineca'), url('./assets/F37-Lineca/F37Lineca/Variable/F37Lineca-VF.ttf') format('ttf'),
      /* url('./fonts/CustomFont.woff') format('woff'); */
 }
 
@@ -8,7 +8,9 @@ html {
     scroll-behavior: smooth;
 }
 
-
+.contact-font{
+    font-family: 'F37Lineca';
+}
 
 @tailwind base;
 @tailwind components;

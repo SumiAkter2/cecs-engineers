@@ -1,10 +1,10 @@
 import PageTransition from "../PageTransition";
+
 const Contact = () => {
   return (
     <PageTransition>
-      <div className=" py-12 border-b border-red-500 ">
+      <div className=" py-12 border-b border-red-500 contact-font">
         <h1 className="uppercase text-3xl text-red-500 px-6 font-extrabold leading-10">
-          {" "}
           Contact Us
         </h1>
       </div>
@@ -80,7 +80,7 @@ const Contact = () => {
             <input
               className="border mt-4 border-red-500 outline-0  w-full max-w-3xl font-bold text-[22px] text-red-500  py-4 rounded-lg cursor-pointer"
               type="Submit"
-              value="Send"
+              // value="Send"
             />
           </form>
         </div>

@@ -1,7 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import Header from "./Component/Shared/Header";
 import Footer from "./Component/Shared/Footer";
-
 import Home from "./Component/Home/Home";
 import Contact from "./Component/Contact/Contact";
 import { AnimatePresence } from "framer-motion";
