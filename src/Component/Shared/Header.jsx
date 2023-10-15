@@ -1,17 +1,45 @@
 import { MdMenu } from "react-icons/md";
 import logo from "../../assets/image/logo/logo.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 const Header = () => {
   const navItem = (
     <>
       <li className="mr-2">
-        <Link to="/">Company</Link>
+        <Link
+          to="/"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          Company
+        </Link>
       </li>
       <li className="mr-2">
-        <Link to="/project">project</Link>
+        <Link
+          to="/project"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          project
+        </Link>
       </li>
       <li className="mr-2">
-        <Link to="/contact">Contact</Link>
+        <Link
+          to="/contact"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          Contact
+        </Link>
       </li>
     </>
   );
