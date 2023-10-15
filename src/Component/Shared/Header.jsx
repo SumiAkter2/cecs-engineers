@@ -1,16 +1,17 @@
 import { MdMenu } from "react-icons/md";
 import logo from "../../assets/image/logo/logo.png";
+import { Link } from "react-router-dom";
 const Header = () => {
   const navItem = (
     <>
       <li className="mr-2">
-        <a href="/">Company</a>
+        <Link to="/">Company</Link>
       </li>
       <li className="mr-2">
-        <a href="/">Projects</a>
+        <Link to="/">project</Link>
       </li>
       <li className="mr-2">
-        <a href="/contact">Contact</a>
+        <Link to="/contact">Contact</Link>
       </li>
     </>
   );

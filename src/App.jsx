@@ -1,27 +1,32 @@
-// import "./App.css";
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import { PageTransition } from "@steveeeie/react-page-transition";
-// import Main from "./layout/Main/Main";
-// import Contact from "./Component/Contact/Contact";
-// import { useState } from "react";
-// function App() {
-//   const [showHomePage, setShowHomePage] = useState(true);
+import { Route, Routes, useLocation } from "react-router-dom";
+import Header from "./Component/Shared/Header";
+import Footer from "./Component/Shared/Footer";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import Contact from "./Component/Contact/Contact";
+import Home from "./Component/Home/Home";
 
-//   const togglePage = () => {
-//     setShowHomePage(!showHomePage);
-//   };
+const App = () => {
+  const location = useLocation();
+  return (
+    <div>
+      <Header />
 
-//   return (
-//     <div>
-//       <button onClick={togglePage}>Toggle Page</button>
-//       <PageTransition in={showHomePage}>
-//         <Main />
-//       </PageTransition>
-//       <PageTransition in={!showHomePage}>
-//         <Contact />
-//       </PageTransition>
-//     </div>
-//   );
-// }
+      {/* <Routes location={location} key={location.pathname}>
+        <Route index element={<Home />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+      </Routes> */}
 
-// export default App;
+      <Routes>
+        <TransitionGroup>
+          <CSSTransition key={location.key} timeout={450} classNames="fade">
+            <Route index element={<Home />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+          </CSSTransition>
+        </TransitionGroup>
+      </Routes>
+      <Footer />
+    </div>
+  );
+};
+
+export default App;
