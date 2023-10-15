@@ -1,8 +1,7 @@
-// import transition from "../transition";
-
+import PageTransition from "../PageTransition";
 const Contact = () => {
   return (
-    <div>
+    <PageTransition>
       <div className=" py-12 border-b border-red-500 ">
         <h1 className="uppercase text-3xl text-red-500 px-6 font-extrabold leading-10">
           {" "}
@@ -86,7 +85,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </div>
+    </PageTransition>
   );
 };
 

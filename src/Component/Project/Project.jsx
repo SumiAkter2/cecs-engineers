@@ -1,6 +1,6 @@
 import PageTransition from "../PageTransition";
 
-const Home = () => {
+const Project = () => {
   return (
     <PageTransition>
       <div
@@ -27,4 +27,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Project;
